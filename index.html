@@ -26,17 +26,30 @@
 <body>
 
   <!-- d-flex = "display: flex" -->
-  <div class="d-flex flex-column flex-md-row">
-    <nav class="bg-primary text-white" style="min-width: 12em;">
-      Nav
-    </nav>
-    <!-- "flex-grow: 1;" -->
-    <main class="flex-grow-1 bg-secondary text-white">
-      Main
-    </main>
-    <aside class="bg-success text-white" style="min-width: 12em;">
-      Barra
-    </aside>
+  <div class="d-flex flex-column min-vh-100">
+
+    <header class="bg-info">
+      Cabeçalho
+    </header>
+
+    <!-- d-flex = "display: flex" -->
+    <div class="d-flex flex-column flex-md-row flex-grow-1">
+      <nav class="bg-primary text-white" style="min-width: 12em;">
+        Nav
+      </nav>
+      <!-- "flex-grow: 1;" -->
+      <main class="flex-grow-1 bg-secondary text-white">
+        Main
+      </main>
+      <aside class="bg-success text-white" style="min-width: 12em;">
+        Barra
+      </aside>
+    </div>
+
+    <footer class="bg-warning">
+      Rodapé
+    </footer>
+
   </div>
 
 </body>
